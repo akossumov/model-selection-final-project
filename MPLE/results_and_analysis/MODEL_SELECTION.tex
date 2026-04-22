@@ -1,0 +1,990 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 494 & 55 & 86 & 241 & 124 \\ 
+  clayton & $\text{xv}_{1}$ & 494 & 55 & 86 & 241 & 124 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 542 & 33 & 95 & 178 & 152 \\ 
+  clayton & $K_{n}=2$ & 336 & 117 & 242 & 192 & 113 \\ 
+  clayton & $K_{n}=5$ & 304 & 179 & 264 & 144 & 109 \\ 
+  clayton & $K_{n}=10$ & 286 & 213 & 256 & 155 & 90 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 281 & 265 & 220 & 144 & 90 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 281 & 257 & 226 & 150 & 86 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 282 & 215 & 254 & 156 & 93 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 330 & 123 & 251 & 174 & 122 \\ 
+   \hdashline
+gumbel & AIC & 269 & 72 & 330 & 205 & 124 \\ 
+  gumbel & $\text{xv}_{1}$ & 272 & 71 & 330 & 206 & 121 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 335 & 52 & 336 & 151 & 126 \\ 
+  gumbel & $K_{n}=2$ & 249 & 132 & 350 & 162 & 107 \\ 
+  gumbel & $K_{n}=5$ & 200 & 177 & 376 & 158 & 89 \\ 
+  gumbel & $K_{n}=10$ & 187 & 218 & 355 & 143 & 97 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 161 & 247 & 345 & 148 & 99 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 159 & 239 & 354 & 143 & 105 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 186 & 196 & 377 & 144 & 97 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 235 & 138 & 350 & 163 & 114 \\ 
+   \hdashline
+joe & AIC & 246 & 84 & 424 & 156 & 90 \\ 
+  joe & $\text{xv}_{1}$ & 246 & 84 & 423 & 156 & 91 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 316 & 49 & 434 & 118 & 83 \\ 
+  joe & $K_{n}=2$ & 211 & 136 & 404 & 142 & 107 \\ 
+  joe & $K_{n}=5$ & 190 & 177 & 430 & 134 & 69 \\ 
+  joe & $K_{n}=10$ & 180 & 211 & 414 & 117 & 78 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 147 & 243 & 429 & 113 & 68 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 170 & 233 & 412 & 121 & 64 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 180 & 211 & 412 & 121 & 76 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 206 & 142 & 420 & 139 & 93 \\ 
+   \hdashline
+frank & AIC & 361 & 51 & 170 & 271 & 147 \\ 
+  frank & $\text{xv}_{1}$ & 361 & 50 & 171 & 272 & 146 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 422 & 36 & 186 & 208 & 148 \\ 
+  frank & $K_{n}=2$ & 273 & 128 & 287 & 203 & 109 \\ 
+  frank & $K_{n}=5$ & 225 & 186 & 293 & 178 & 118 \\ 
+  frank & $K_{n}=10$ & 205 & 231 & 285 & 169 & 110 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 191 & 267 & 253 & 186 & 103 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 195 & 255 & 274 & 173 & 103 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 213 & 201 & 299 & 187 & 100 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 280 & 103 & 290 & 205 & 122 \\ 
+   \hdashline
+gaussian & AIC & 347 & 62 & 197 & 250 & 144 \\ 
+  gaussian & $\text{xv}_{1}$ & 347 & 62 & 197 & 251 & 143 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 402 & 35 & 207 & 188 & 168 \\ 
+  gaussian & $K_{n}=2$ & 282 & 126 & 246 & 207 & 139 \\ 
+  gaussian & $K_{n}=5$ & 238 & 191 & 299 & 167 & 105 \\ 
+  gaussian & $K_{n}=10$ & 220 & 197 & 290 & 162 & 131 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 178 & 266 & 255 & 172 & 129 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 212 & 231 & 285 & 159 & 113 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 208 & 221 & 295 & 157 & 119 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 258 & 129 & 283 & 182 & 148 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 100$, $\tau = 0.05$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 555 & 52 & 89 & 169 & 135 \\ 
+  clayton & $\text{xv}_{1}$ & 555 & 52 & 89 & 169 & 135 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 557 & 48 & 92 & 160 & 143 \\ 
+  clayton & $K_{n}=2$ & 400 & 122 & 215 & 144 & 119 \\ 
+  clayton & $K_{n}=5$ & 385 & 152 & 220 & 139 & 104 \\ 
+  clayton & $K_{n}=10$ & 388 & 185 & 211 & 119 & 97 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 364 & 229 & 179 & 126 & 102 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 367 & 223 & 187 & 124 & 99 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 386 & 200 & 192 & 120 & 102 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 399 & 106 & 212 & 158 & 125 \\ 
+   \hdashline
+gumbel & AIC & 194 & 132 & 353 & 190 & 131 \\ 
+  gumbel & $\text{xv}_{1}$ & 195 & 132 & 352 & 190 & 131 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 242 & 106 & 374 & 155 & 123 \\ 
+  gumbel & $K_{n}=2$ & 205 & 138 & 361 & 169 & 127 \\ 
+  gumbel & $K_{n}=5$ & 163 & 180 & 395 & 160 & 102 \\ 
+  gumbel & $K_{n}=10$ & 168 & 215 & 374 & 136 & 107 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 146 & 239 & 363 & 140 & 112 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 154 & 244 & 353 & 136 & 113 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 160 & 224 & 359 & 143 & 114 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 217 & 153 & 361 & 163 & 106 \\ 
+   \hdashline
+joe & AIC & 143 & 118 & 513 & 132 & 94 \\ 
+  joe & $\text{xv}_{1}$ & 144 & 118 & 513 & 132 & 93 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 187 & 89 & 536 & 99 & 89 \\ 
+  joe & $K_{n}=2$ & 201 & 138 & 439 & 118 & 104 \\ 
+  joe & $K_{n}=5$ & 169 & 167 & 482 & 112 & 70 \\ 
+  joe & $K_{n}=10$ & 127 & 197 & 506 & 96 & 74 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 104 & 199 & 506 & 103 & 88 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 109 & 187 & 521 & 101 & 82 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 127 & 179 & 509 & 104 & 81 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 186 & 151 & 431 & 135 & 97 \\ 
+   \hdashline
+frank & AIC & 294 & 75 & 151 & 328 & 152 \\ 
+  frank & $\text{xv}_{1}$ & 294 & 74 & 152 & 328 & 152 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 329 & 61 & 154 & 292 & 164 \\ 
+  frank & $K_{n}=2$ & 255 & 123 & 248 & 238 & 136 \\ 
+  frank & $K_{n}=5$ & 229 & 157 & 271 & 223 & 120 \\ 
+  frank & $K_{n}=10$ & 193 & 182 & 257 & 259 & 109 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 172 & 227 & 232 & 249 & 120 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 190 & 189 & 256 & 246 & 119 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 207 & 173 & 250 & 245 & 125 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 253 & 121 & 243 & 237 & 146 \\ 
+   \hdashline
+gaussian & AIC & 327 & 86 & 167 & 240 & 180 \\ 
+  gaussian & $\text{xv}_{1}$ & 327 & 86 & 167 & 240 & 180 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 370 & 73 & 174 & 199 & 184 \\ 
+  gaussian & $K_{n}=2$ & 286 & 134 & 234 & 184 & 162 \\ 
+  gaussian & $K_{n}=5$ & 234 & 176 & 274 & 178 & 138 \\ 
+  gaussian & $K_{n}=10$ & 220 & 209 & 251 & 181 & 139 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 193 & 256 & 221 & 173 & 157 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 203 & 238 & 229 & 176 & 154 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 213 & 204 & 243 & 186 & 154 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 281 & 122 & 273 & 181 & 143 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 200$, $\tau = 0.05$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 635 & 47 & 44 & 150 & 124 \\ 
+  clayton & $\text{xv}_{1}$ & 635 & 47 & 44 & 150 & 124 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 636 & 43 & 45 & 147 & 129 \\ 
+  clayton & $K_{n}=2$ & 493 & 92 & 156 & 142 & 117 \\ 
+  clayton & $K_{n}=5$ & 531 & 95 & 127 & 135 & 112 \\ 
+  clayton & $K_{n}=10$ & 535 & 104 & 130 & 121 & 110 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 544 & 132 & 88 & 125 & 111 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 550 & 118 & 97 & 124 & 111 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 546 & 102 & 103 & 129 & 120 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 511 & 82 & 148 & 141 & 118 \\ 
+   \hdashline
+gumbel & AIC & 126 & 207 & 398 & 145 & 124 \\ 
+  gumbel & $\text{xv}_{1}$ & 126 & 207 & 398 & 145 & 124 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 137 & 196 & 411 & 136 & 120 \\ 
+  gumbel & $K_{n}=2$ & 163 & 190 & 376 & 168 & 103 \\ 
+  gumbel & $K_{n}=5$ & 138 & 237 & 361 & 142 & 122 \\ 
+  gumbel & $K_{n}=10$ & 128 & 243 & 379 & 140 & 110 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 104 & 267 & 372 & 138 & 119 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 103 & 257 & 373 & 145 & 122 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 113 & 246 & 373 & 153 & 115 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 145 & 213 & 366 & 155 & 121 \\ 
+   \hdashline
+joe & AIC & 55 & 180 & 640 & 65 & 60 \\ 
+  joe & $\text{xv}_{1}$ & 55 & 180 & 640 & 65 & 60 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 74 & 150 & 664 & 56 & 56 \\ 
+  joe & $K_{n}=2$ & 127 & 181 & 543 & 83 & 66 \\ 
+  joe & $K_{n}=5$ & 74 & 193 & 598 & 77 & 58 \\ 
+  joe & $K_{n}=10$ & 51 & 224 & 599 & 70 & 56 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 46 & 218 & 609 & 63 & 64 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 45 & 211 & 612 & 62 & 70 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 53 & 215 & 612 & 60 & 60 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 84 & 220 & 556 & 74 & 66 \\ 
+   \hdashline
+frank & AIC & 249 & 98 & 107 & 383 & 163 \\ 
+  frank & $\text{xv}_{1}$ & 249 & 98 & 107 & 383 & 163 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 267 & 97 & 113 & 352 & 171 \\ 
+  frank & $K_{n}=2$ & 237 & 126 & 212 & 280 & 145 \\ 
+  frank & $K_{n}=5$ & 200 & 157 & 203 & 303 & 137 \\ 
+  frank & $K_{n}=10$ & 198 & 160 & 184 & 317 & 141 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 165 & 209 & 166 & 319 & 141 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 163 & 198 & 174 & 326 & 139 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 173 & 182 & 180 & 319 & 146 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 230 & 131 & 219 & 281 & 139 \\ 
+   \hdashline
+gaussian & AIC & 276 & 112 & 132 & 250 & 230 \\ 
+  gaussian & $\text{xv}_{1}$ & 276 & 112 & 132 & 250 & 230 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 294 & 113 & 138 & 224 & 231 \\ 
+  gaussian & $K_{n}=2$ & 257 & 122 & 196 & 233 & 192 \\ 
+  gaussian & $K_{n}=5$ & 232 & 137 & 214 & 203 & 214 \\ 
+  gaussian & $K_{n}=10$ & 246 & 163 & 178 & 212 & 201 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 209 & 190 & 172 & 209 & 220 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 215 & 184 & 174 & 214 & 213 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 213 & 172 & 188 & 215 & 212 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 261 & 135 & 206 & 216 & 182 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 400$, $\tau = 0.05$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 630 & 48 & 49 & 150 & 123 \\ 
+  clayton & $\text{xv}_{1}$ & 631 & 49 & 49 & 149 & 122 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 618 & 40 & 59 & 137 & 146 \\ 
+  clayton & $K_{n}=2$ & 483 & 87 & 174 & 135 & 121 \\ 
+  clayton & $K_{n}=5$ & 507 & 93 & 153 & 135 & 112 \\ 
+  clayton & $K_{n}=10$ & 522 & 100 & 142 & 119 & 117 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 516 & 123 & 122 & 124 & 115 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 515 & 123 & 128 & 124 & 110 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 512 & 120 & 145 & 128 & 95 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 483 & 78 & 181 & 145 & 113 \\ 
+   \hdashline
+gumbel & AIC & 144 & 160 & 438 & 153 & 105 \\ 
+  gumbel & $\text{xv}_{1}$ & 144 & 160 & 438 & 153 & 105 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 169 & 130 & 464 & 128 & 109 \\ 
+  gumbel & $K_{n}=2$ & 188 & 132 & 443 & 138 & 99 \\ 
+  gumbel & $K_{n}=5$ & 161 & 193 & 434 & 114 & 98 \\ 
+  gumbel & $K_{n}=10$ & 131 & 214 & 425 & 123 & 107 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 126 & 215 & 424 & 139 & 96 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 127 & 189 & 447 & 134 & 103 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 135 & 215 & 426 & 129 & 95 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 195 & 173 & 406 & 129 & 97 \\ 
+   \hdashline
+joe & AIC & 87 & 123 & 627 & 96 & 67 \\ 
+  joe & $\text{xv}_{1}$ & 87 & 123 & 627 & 96 & 67 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 117 & 96 & 644 & 79 & 64 \\ 
+  joe & $K_{n}=2$ & 145 & 155 & 524 & 99 & 77 \\ 
+  joe & $K_{n}=5$ & 94 & 163 & 571 & 99 & 73 \\ 
+  joe & $K_{n}=10$ & 95 & 176 & 576 & 96 & 57 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 73 & 183 & 581 & 95 & 68 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 77 & 187 & 583 & 90 & 63 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 85 & 177 & 578 & 94 & 66 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 141 & 138 & 541 & 108 & 72 \\ 
+   \hdashline
+frank & AIC & 282 & 73 & 158 & 348 & 139 \\ 
+  frank & $\text{xv}_{1}$ & 283 & 73 & 157 & 348 & 139 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 283 & 39 & 191 & 334 & 153 \\ 
+  frank & $K_{n}=2$ & 269 & 94 & 235 & 263 & 139 \\ 
+  frank & $K_{n}=5$ & 220 & 109 & 249 & 285 & 137 \\ 
+  frank & $K_{n}=10$ & 208 & 136 & 233 & 286 & 137 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 193 & 147 & 217 & 316 & 127 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 189 & 149 & 229 & 313 & 120 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 198 & 133 & 218 & 321 & 130 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 235 & 106 & 226 & 291 & 142 \\ 
+   \hdashline
+gaussian & AIC & 302 & 109 & 188 & 215 & 186 \\ 
+  gaussian & $\text{xv}_{1}$ & 302 & 109 & 189 & 215 & 185 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 301 & 84 & 218 & 186 & 211 \\ 
+  gaussian & $K_{n}=2$ & 239 & 123 & 271 & 198 & 169 \\ 
+  gaussian & $K_{n}=5$ & 237 & 156 & 261 & 172 & 174 \\ 
+  gaussian & $K_{n}=10$ & 230 & 167 & 245 & 181 & 177 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 213 & 190 & 220 & 197 & 180 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 225 & 171 & 238 & 184 & 182 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 231 & 176 & 249 & 177 & 167 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 287 & 126 & 255 & 179 & 153 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 100$, $\tau = 0.10$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 709 & 50 & 15 & 119 & 107 \\ 
+  clayton & $\text{xv}_{1}$ & 709 & 50 & 15 & 119 & 107 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 693 & 52 & 15 & 117 & 123 \\ 
+  clayton & $K_{n}=2$ & 596 & 58 & 96 & 137 & 113 \\ 
+  clayton & $K_{n}=5$ & 642 & 57 & 55 & 129 & 117 \\ 
+  clayton & $K_{n}=10$ & 674 & 65 & 48 & 104 & 109 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 678 & 81 & 35 & 108 & 98 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 679 & 73 & 37 & 111 & 100 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 664 & 66 & 43 & 115 & 112 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 624 & 43 & 85 & 125 & 123 \\ 
+   \hdashline
+gumbel & AIC & 82 & 291 & 397 & 122 & 108 \\ 
+  gumbel & $\text{xv}_{1}$ & 82 & 290 & 397 & 123 & 108 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 87 & 261 & 438 & 119 & 95 \\ 
+  gumbel & $K_{n}=2$ & 128 & 236 & 395 & 131 & 110 \\ 
+  gumbel & $K_{n}=5$ & 102 & 296 & 369 & 121 & 112 \\ 
+  gumbel & $K_{n}=10$ & 88 & 289 & 397 & 121 & 105 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 79 & 317 & 389 & 118 & 97 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 87 & 322 & 377 & 114 & 100 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 85 & 295 & 392 & 123 & 105 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 131 & 248 & 383 & 127 & 111 \\ 
+   \hdashline
+joe & AIC & 22 & 181 & 696 & 55 & 46 \\ 
+  joe & $\text{xv}_{1}$ & 22 & 181 & 696 & 55 & 46 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 24 & 144 & 738 & 50 & 44 \\ 
+  joe & $K_{n}=2$ & 60 & 182 & 623 & 70 & 65 \\ 
+  joe & $K_{n}=5$ & 33 & 210 & 660 & 54 & 43 \\ 
+  joe & $K_{n}=10$ & 30 & 206 & 666 & 54 & 44 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 19 & 206 & 675 & 58 & 42 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 23 & 192 & 682 & 59 & 44 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 29 & 201 & 673 & 55 & 42 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 75 & 180 & 610 & 77 & 58 \\ 
+   \hdashline
+frank & AIC & 204 & 112 & 80 & 425 & 179 \\ 
+  frank & $\text{xv}_{1}$ & 204 & 112 & 80 & 425 & 179 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 200 & 96 & 95 & 420 & 189 \\ 
+  frank & $K_{n}=2$ & 233 & 97 & 189 & 338 & 143 \\ 
+  frank & $K_{n}=5$ & 207 & 129 & 139 & 373 & 152 \\ 
+  frank & $K_{n}=10$ & 175 & 135 & 129 & 402 & 159 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 180 & 138 & 107 & 407 & 168 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 182 & 136 & 114 & 403 & 165 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 201 & 147 & 107 & 395 & 150 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 238 & 101 & 157 & 343 & 161 \\ 
+   \hdashline
+gaussian & AIC & 239 & 144 & 109 & 223 & 285 \\ 
+  gaussian & $\text{xv}_{1}$ & 239 & 144 & 109 & 223 & 285 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 222 & 131 & 132 & 215 & 300 \\ 
+  gaussian & $K_{n}=2$ & 226 & 127 & 184 & 199 & 264 \\ 
+  gaussian & $K_{n}=5$ & 227 & 155 & 128 & 217 & 273 \\ 
+  gaussian & $K_{n}=10$ & 213 & 140 & 143 & 226 & 278 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 193 & 170 & 133 & 226 & 278 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 208 & 166 & 137 & 212 & 277 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 213 & 171 & 135 & 220 & 261 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 251 & 139 & 160 & 216 & 234 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 200$, $\tau = 0.10$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 841 & 17 & 0 & 63 & 79 \\ 
+  clayton & $\text{xv}_{1}$ & 841 & 17 & 0 & 63 & 79 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 815 & 22 & 0 & 68 & 95 \\ 
+  clayton & $K_{n}=2$ & 749 & 21 & 33 & 82 & 115 \\ 
+  clayton & $K_{n}=5$ & 823 & 19 & 7 & 69 & 82 \\ 
+  clayton & $K_{n}=10$ & 826 & 21 & 3 & 66 & 84 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 831 & 25 & 3 & 62 & 79 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 829 & 21 & 4 & 65 & 81 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 834 & 20 & 5 & 61 & 80 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 809 & 22 & 10 & 64 & 95 \\ 
+   \hdashline
+gumbel & AIC & 23 & 414 & 359 & 86 & 118 \\ 
+  gumbel & $\text{xv}_{1}$ & 23 & 414 & 359 & 86 & 118 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 22 & 394 & 391 & 86 & 107 \\ 
+  gumbel & $K_{n}=2$ & 52 & 364 & 373 & 100 & 111 \\ 
+  gumbel & $K_{n}=5$ & 34 & 399 & 361 & 79 & 127 \\ 
+  gumbel & $K_{n}=10$ & 29 & 427 & 346 & 87 & 111 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 25 & 425 & 351 & 83 & 116 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 24 & 423 & 349 & 91 & 113 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 27 & 421 & 355 & 87 & 110 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 43 & 399 & 367 & 85 & 106 \\ 
+   \hdashline
+joe & AIC & 4 & 209 & 750 & 17 & 20 \\ 
+  joe & $\text{xv}_{1}$ & 4 & 208 & 751 & 17 & 20 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 4 & 182 & 777 & 19 & 18 \\ 
+  joe & $K_{n}=2$ & 22 & 236 & 679 & 27 & 36 \\ 
+  joe & $K_{n}=5$ & 5 & 227 & 726 & 20 & 22 \\ 
+  joe & $K_{n}=10$ & 4 & 216 & 742 & 18 & 20 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 5 & 220 & 737 & 17 & 21 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 3 & 219 & 738 & 19 & 21 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 8 & 221 & 733 & 17 & 21 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 5 & 222 & 720 & 21 & 32 \\ 
+   \hdashline
+frank & AIC & 144 & 87 & 18 & 552 & 199 \\ 
+  frank & $\text{xv}_{1}$ & 144 & 87 & 18 & 552 & 199 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 139 & 86 & 24 & 554 & 197 \\ 
+  frank & $K_{n}=2$ & 166 & 82 & 76 & 473 & 203 \\ 
+  frank & $K_{n}=5$ & 150 & 86 & 46 & 510 & 208 \\ 
+  frank & $K_{n}=10$ & 150 & 93 & 30 & 528 & 199 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 150 & 91 & 22 & 541 & 196 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 149 & 93 & 25 & 540 & 193 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 148 & 89 & 33 & 535 & 195 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 156 & 83 & 61 & 484 & 216 \\ 
+   \hdashline
+gaussian & AIC & 167 & 135 & 45 & 241 & 412 \\ 
+  gaussian & $\text{xv}_{1}$ & 167 & 135 & 45 & 241 & 412 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 153 & 133 & 56 & 237 & 421 \\ 
+  gaussian & $K_{n}=2$ & 197 & 144 & 90 & 232 & 337 \\ 
+  gaussian & $K_{n}=5$ & 169 & 129 & 72 & 231 & 399 \\ 
+  gaussian & $K_{n}=10$ & 167 & 141 & 59 & 238 & 395 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 158 & 143 & 50 & 233 & 416 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 159 & 142 & 52 & 242 & 405 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 167 & 143 & 54 & 237 & 399 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 182 & 140 & 66 & 233 & 379 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 400$, $\tau = 0.10$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 743 & 45 & 13 & 105 & 94 \\ 
+  clayton & $\text{xv}_{1}$ & 744 & 45 & 13 & 104 & 94 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 702 & 42 & 21 & 111 & 124 \\ 
+  clayton & $K_{n}=2$ & 628 & 44 & 106 & 112 & 110 \\ 
+  clayton & $K_{n}=5$ & 684 & 56 & 52 & 103 & 105 \\ 
+  clayton & $K_{n}=10$ & 698 & 52 & 42 & 112 & 96 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 708 & 64 & 38 & 99 & 91 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 699 & 55 & 49 & 102 & 95 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 696 & 55 & 49 & 104 & 96 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 617 & 40 & 104 & 119 & 120 \\ 
+   \hdashline
+gumbel & AIC & 92 & 263 & 399 & 119 & 127 \\ 
+  gumbel & $\text{xv}_{1}$ & 93 & 261 & 400 & 119 & 127 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 94 & 211 & 453 & 116 & 126 \\ 
+  gumbel & $K_{n}=2$ & 136 & 235 & 389 & 116 & 124 \\ 
+  gumbel & $K_{n}=5$ & 106 & 242 & 413 & 115 & 124 \\ 
+  gumbel & $K_{n}=10$ & 95 & 268 & 391 & 129 & 117 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 89 & 288 & 392 & 115 & 116 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 92 & 295 & 379 & 123 & 111 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 97 & 271 & 395 & 114 & 123 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 145 & 198 & 401 & 126 & 130 \\ 
+   \hdashline
+joe & AIC & 27 & 160 & 690 & 61 & 62 \\ 
+  joe & $\text{xv}_{1}$ & 27 & 160 & 690 & 61 & 62 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 43 & 112 & 731 & 62 & 52 \\ 
+  joe & $K_{n}=2$ & 61 & 182 & 621 & 76 & 60 \\ 
+  joe & $K_{n}=5$ & 46 & 179 & 654 & 60 & 61 \\ 
+  joe & $K_{n}=10$ & 34 & 184 & 662 & 64 & 56 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 36 & 192 & 660 & 61 & 51 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 33 & 194 & 660 & 62 & 51 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 40 & 182 & 658 & 73 & 47 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 77 & 161 & 610 & 72 & 80 \\ 
+   \hdashline
+frank & AIC & 201 & 105 & 108 & 400 & 186 \\ 
+  frank & $\text{xv}_{1}$ & 201 & 104 & 110 & 400 & 185 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 178 & 92 & 140 & 382 & 208 \\ 
+  frank & $K_{n}=2$ & 228 & 109 & 173 & 327 & 163 \\ 
+  frank & $K_{n}=5$ & 210 & 117 & 137 & 353 & 183 \\ 
+  frank & $K_{n}=10$ & 198 & 122 & 125 & 368 & 187 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 181 & 134 & 111 & 380 & 194 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 185 & 126 & 126 & 387 & 176 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 200 & 128 & 128 & 360 & 184 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 233 & 120 & 163 & 304 & 180 \\ 
+   \hdashline
+gaussian & AIC & 241 & 140 & 149 & 234 & 236 \\ 
+  gaussian & $\text{xv}_{1}$ & 241 & 140 & 149 & 234 & 236 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 207 & 123 & 184 & 224 & 262 \\ 
+  gaussian & $K_{n}=2$ & 244 & 149 & 186 & 220 & 201 \\ 
+  gaussian & $K_{n}=5$ & 242 & 148 & 173 & 204 & 233 \\ 
+  gaussian & $K_{n}=10$ & 235 & 161 & 170 & 207 & 227 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 224 & 178 & 149 & 219 & 230 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 229 & 159 & 157 & 225 & 230 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 237 & 164 & 157 & 207 & 235 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 262 & 132 & 202 & 213 & 191 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 100$, $\tau = 0.15$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 827 & 17 & 2 & 76 & 78 \\ 
+  clayton & $\text{xv}_{1}$ & 827 & 17 & 2 & 76 & 78 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 784 & 17 & 4 & 85 & 110 \\ 
+  clayton & $K_{n}=2$ & 754 & 28 & 17 & 102 & 99 \\ 
+  clayton & $K_{n}=5$ & 809 & 20 & 8 & 76 & 87 \\ 
+  clayton & $K_{n}=10$ & 815 & 21 & 8 & 76 & 80 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 819 & 20 & 6 & 80 & 75 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 824 & 21 & 5 & 78 & 72 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 820 & 19 & 4 & 81 & 76 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 763 & 21 & 27 & 93 & 96 \\ 
+   \hdashline
+gumbel & AIC & 32 & 379 & 366 & 87 & 136 \\ 
+  gumbel & $\text{xv}_{1}$ & 32 & 379 & 366 & 87 & 136 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 28 & 348 & 415 & 89 & 120 \\ 
+  gumbel & $K_{n}=2$ & 53 & 348 & 368 & 100 & 131 \\ 
+  gumbel & $K_{n}=5$ & 39 & 374 & 361 & 89 & 137 \\ 
+  gumbel & $K_{n}=10$ & 33 & 386 & 359 & 97 & 125 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 30 & 401 & 350 & 91 & 128 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 32 & 399 & 354 & 90 & 125 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 33 & 389 & 350 & 96 & 132 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 59 & 342 & 380 & 95 & 124 \\ 
+   \hdashline
+joe & AIC & 2 & 185 & 761 & 25 & 27 \\ 
+  joe & $\text{xv}_{1}$ & 2 & 185 & 761 & 25 & 27 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 1 & 155 & 796 & 24 & 24 \\ 
+  joe & $K_{n}=2$ & 13 & 194 & 727 & 29 & 37 \\ 
+  joe & $K_{n}=5$ & 2 & 201 & 743 & 24 & 30 \\ 
+  joe & $K_{n}=10$ & 3 & 193 & 755 & 25 & 24 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 1 & 197 & 753 & 24 & 25 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 2 & 194 & 758 & 21 & 25 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 1 & 198 & 752 & 23 & 26 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 10 & 219 & 702 & 32 & 37 \\ 
+   \hdashline
+frank & AIC & 139 & 118 & 42 & 509 & 192 \\ 
+  frank & $\text{xv}_{1}$ & 139 & 117 & 43 & 509 & 192 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 109 & 112 & 58 & 517 & 204 \\ 
+  frank & $K_{n}=2$ & 156 & 114 & 90 & 443 & 197 \\ 
+  frank & $K_{n}=5$ & 144 & 121 & 53 & 491 & 191 \\ 
+  frank & $K_{n}=10$ & 146 & 128 & 41 & 485 & 200 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 139 & 126 & 42 & 501 & 192 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 139 & 130 & 38 & 500 & 193 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 138 & 121 & 40 & 513 & 188 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 164 & 117 & 81 & 450 & 188 \\ 
+   \hdashline
+gaussian & AIC & 183 & 169 & 44 & 199 & 405 \\ 
+  gaussian & $\text{xv}_{1}$ & 183 & 169 & 44 & 199 & 405 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 153 & 175 & 59 & 201 & 412 \\ 
+  gaussian & $K_{n}=2$ & 217 & 141 & 86 & 198 & 358 \\ 
+  gaussian & $K_{n}=5$ & 181 & 167 & 71 & 206 & 375 \\ 
+  gaussian & $K_{n}=10$ & 189 & 168 & 51 & 193 & 399 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 179 & 183 & 41 & 200 & 397 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 183 & 181 & 40 & 202 & 394 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 176 & 177 & 51 & 201 & 395 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 211 & 152 & 94 & 209 & 334 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 200$, $\tau = 0.15$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 914 & 4 & 0 & 26 & 56 \\ 
+  clayton & $\text{xv}_{1}$ & 914 & 4 & 0 & 26 & 56 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 890 & 5 & 0 & 30 & 75 \\ 
+  clayton & $K_{n}=2$ & 887 & 6 & 3 & 36 & 68 \\ 
+  clayton & $K_{n}=5$ & 912 & 5 & 0 & 31 & 52 \\ 
+  clayton & $K_{n}=10$ & 910 & 4 & 0 & 29 & 57 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 915 & 5 & 0 & 28 & 52 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 914 & 3 & 0 & 30 & 53 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 913 & 4 & 0 & 29 & 54 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 904 & 5 & 0 & 27 & 64 \\ 
+   \hdashline
+gumbel & AIC & 7 & 580 & 285 & 45 & 83 \\ 
+  gumbel & $\text{xv}_{1}$ & 7 & 580 & 285 & 45 & 83 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 7 & 558 & 317 & 47 & 71 \\ 
+  gumbel & $K_{n}=2$ & 17 & 526 & 303 & 59 & 95 \\ 
+  gumbel & $K_{n}=5$ & 10 & 576 & 285 & 54 & 75 \\ 
+  gumbel & $K_{n}=10$ & 7 & 586 & 280 & 46 & 81 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 7 & 588 & 279 & 47 & 79 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 7 & 588 & 276 & 48 & 81 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 7 & 589 & 276 & 51 & 77 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 8 & 565 & 292 & 53 & 82 \\ 
+   \hdashline
+joe & AIC & 0 & 196 & 795 & 5 & 4 \\ 
+  joe & $\text{xv}_{1}$ & 0 & 196 & 795 & 5 & 4 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 0 & 176 & 815 & 5 & 4 \\ 
+  joe & $K_{n}=2$ & 2 & 230 & 755 & 7 & 6 \\ 
+  joe & $K_{n}=5$ & 0 & 209 & 782 & 5 & 4 \\ 
+  joe & $K_{n}=10$ & 0 & 208 & 783 & 5 & 4 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 0 & 201 & 790 & 5 & 4 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 0 & 202 & 789 & 5 & 4 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 0 & 201 & 790 & 5 & 4 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 1 & 206 & 784 & 5 & 4 \\ 
+   \hdashline
+frank & AIC & 69 & 72 & 2 & 661 & 196 \\ 
+  frank & $\text{xv}_{1}$ & 69 & 72 & 2 & 661 & 196 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 55 & 80 & 3 & 675 & 187 \\ 
+  frank & $K_{n}=2$ & 96 & 78 & 16 & 611 & 199 \\ 
+  frank & $K_{n}=5$ & 77 & 75 & 5 & 664 & 179 \\ 
+  frank & $K_{n}=10$ & 69 & 79 & 2 & 667 & 183 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 70 & 78 & 2 & 660 & 190 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 67 & 79 & 3 & 659 & 192 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 72 & 80 & 3 & 659 & 186 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 74 & 78 & 10 & 641 & 197 \\ 
+   \hdashline
+gaussian & AIC & 95 & 118 & 8 & 196 & 583 \\ 
+  gaussian & $\text{xv}_{1}$ & 95 & 118 & 8 & 196 & 583 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 76 & 127 & 10 & 195 & 592 \\ 
+  gaussian & $K_{n}=2$ & 120 & 111 & 22 & 224 & 523 \\ 
+  gaussian & $K_{n}=5$ & 104 & 118 & 9 & 205 & 564 \\ 
+  gaussian & $K_{n}=10$ & 99 & 126 & 9 & 195 & 571 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 98 & 127 & 8 & 195 & 572 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 95 & 125 & 8 & 191 & 581 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 96 & 125 & 7 & 190 & 582 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 112 & 130 & 10 & 199 & 549 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 400$, $\tau = 0.15$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 792 & 26 & 5 & 68 & 109 \\ 
+  clayton & $\text{xv}_{1}$ & 792 & 26 & 5 & 67 & 110 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 748 & 33 & 6 & 73 & 140 \\ 
+  clayton & $K_{n}=2$ & 718 & 32 & 37 & 90 & 123 \\ 
+  clayton & $K_{n}=5$ & 777 & 30 & 15 & 71 & 107 \\ 
+  clayton & $K_{n}=10$ & 783 & 28 & 9 & 72 & 108 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 786 & 28 & 11 & 74 & 101 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 788 & 32 & 8 & 69 & 103 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 778 & 28 & 13 & 65 & 116 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 714 & 33 & 45 & 94 & 114 \\ 
+   \hdashline
+gumbel & AIC & 40 & 336 & 391 & 95 & 138 \\ 
+  gumbel & $\text{xv}_{1}$ & 40 & 336 & 391 & 95 & 138 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 31 & 272 & 463 & 103 & 131 \\ 
+  gumbel & $K_{n}=2$ & 91 & 277 & 391 & 106 & 135 \\ 
+  gumbel & $K_{n}=5$ & 51 & 352 & 374 & 106 & 117 \\ 
+  gumbel & $K_{n}=10$ & 54 & 327 & 393 & 102 & 124 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 45 & 345 & 381 & 102 & 127 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 41 & 341 & 378 & 110 & 130 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 39 & 333 & 391 & 110 & 127 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 87 & 287 & 371 & 112 & 143 \\ 
+   \hdashline
+joe & AIC & 17 & 201 & 706 & 40 & 36 \\ 
+  joe & $\text{xv}_{1}$ & 17 & 201 & 706 & 40 & 36 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 17 & 151 & 764 & 41 & 27 \\ 
+  joe & $K_{n}=2$ & 26 & 218 & 670 & 44 & 42 \\ 
+  joe & $K_{n}=5$ & 15 & 205 & 701 & 37 & 42 \\ 
+  joe & $K_{n}=10$ & 14 & 219 & 691 & 40 & 36 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 11 & 215 & 699 & 38 & 37 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 12 & 224 & 690 & 39 & 35 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 12 & 218 & 697 & 37 & 36 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 41 & 211 & 644 & 47 & 57 \\ 
+   \hdashline
+frank & AIC & 164 & 119 & 82 & 458 & 177 \\ 
+  frank & $\text{xv}_{1}$ & 164 & 119 & 82 & 458 & 177 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 120 & 116 & 115 & 461 & 188 \\ 
+  frank & $K_{n}=2$ & 190 & 127 & 112 & 394 & 177 \\ 
+  frank & $K_{n}=5$ & 181 & 132 & 93 & 412 & 182 \\ 
+  frank & $K_{n}=10$ & 182 & 139 & 73 & 436 & 170 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 165 & 135 & 79 & 450 & 171 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 170 & 140 & 81 & 437 & 172 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 162 & 137 & 84 & 449 & 168 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 196 & 124 & 131 & 384 & 165 \\ 
+   \hdashline
+gaussian & AIC & 192 & 157 & 105 & 237 & 309 \\ 
+  gaussian & $\text{xv}_{1}$ & 192 & 158 & 104 & 237 & 309 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 151 & 146 & 142 & 235 & 326 \\ 
+  gaussian & $K_{n}=2$ & 213 & 144 & 149 & 210 & 284 \\ 
+  gaussian & $K_{n}=5$ & 214 & 146 & 122 & 218 & 300 \\ 
+  gaussian & $K_{n}=10$ & 192 & 169 & 115 & 242 & 282 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 195 & 175 & 102 & 239 & 289 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 194 & 172 & 108 & 233 & 293 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 194 & 176 & 101 & 222 & 307 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 214 & 155 & 153 & 205 & 273 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 100$, $\tau = 0.20$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 900 & 7 & 0 & 36 & 57 \\ 
+  clayton & $\text{xv}_{1}$ & 900 & 7 & 0 & 36 & 57 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 870 & 7 & 0 & 48 & 75 \\ 
+  clayton & $K_{n}=2$ & 865 & 9 & 3 & 49 & 74 \\ 
+  clayton & $K_{n}=5$ & 894 & 5 & 0 & 39 & 62 \\ 
+  clayton & $K_{n}=10$ & 899 & 8 & 0 & 39 & 54 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 898 & 7 & 0 & 42 & 53 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 896 & 7 & 0 & 40 & 57 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 894 & 6 & 0 & 43 & 57 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 853 & 8 & 2 & 47 & 90 \\ 
+   \hdashline
+gumbel & AIC & 14 & 496 & 318 & 74 & 98 \\ 
+  gumbel & $\text{xv}_{1}$ & 14 & 495 & 319 & 74 & 98 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 11 & 455 & 372 & 74 & 88 \\ 
+  gumbel & $K_{n}=2$ & 30 & 458 & 321 & 84 & 107 \\ 
+  gumbel & $K_{n}=5$ & 14 & 499 & 301 & 82 & 104 \\ 
+  gumbel & $K_{n}=10$ & 12 & 514 & 303 & 71 & 100 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 14 & 515 & 303 & 74 & 94 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 16 & 514 & 303 & 71 & 96 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 15 & 512 & 302 & 76 & 95 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 22 & 465 & 334 & 75 & 104 \\ 
+   \hdashline
+joe & AIC & 0 & 187 & 801 & 5 & 7 \\ 
+  joe & $\text{xv}_{1}$ & 0 & 187 & 801 & 5 & 7 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 0 & 152 & 840 & 4 & 4 \\ 
+  joe & $K_{n}=2$ & 2 & 207 & 760 & 15 & 16 \\ 
+  joe & $K_{n}=5$ & 0 & 188 & 797 & 5 & 10 \\ 
+  joe & $K_{n}=10$ & 0 & 194 & 793 & 7 & 6 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 0 & 191 & 798 & 6 & 5 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 0 & 198 & 791 & 5 & 6 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 0 & 199 & 789 & 4 & 8 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 0 & 208 & 764 & 14 & 14 \\ 
+   \hdashline
+frank & AIC & 96 & 106 & 11 & 591 & 196 \\ 
+  frank & $\text{xv}_{1}$ & 96 & 106 & 11 & 591 & 196 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 70 & 110 & 16 & 612 & 192 \\ 
+  frank & $K_{n}=2$ & 122 & 108 & 36 & 537 & 197 \\ 
+  frank & $K_{n}=5$ & 94 & 110 & 12 & 589 & 195 \\ 
+  frank & $K_{n}=10$ & 95 & 102 & 9 & 600 & 194 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 97 & 104 & 10 & 601 & 188 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 93 & 109 & 10 & 607 & 181 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 95 & 111 & 9 & 594 & 191 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 126 & 92 & 26 & 545 & 211 \\ 
+   \hdashline
+gaussian & AIC & 130 & 164 & 16 & 192 & 498 \\ 
+  gaussian & $\text{xv}_{1}$ & 130 & 164 & 16 & 192 & 498 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 99 & 185 & 19 & 206 & 491 \\ 
+  gaussian & $K_{n}=2$ & 143 & 165 & 42 & 206 & 444 \\ 
+  gaussian & $K_{n}=5$ & 138 & 176 & 18 & 192 & 476 \\ 
+  gaussian & $K_{n}=10$ & 131 & 178 & 14 & 200 & 477 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 132 & 174 & 16 & 202 & 476 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 124 & 177 & 13 & 196 & 490 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 132 & 173 & 14 & 201 & 480 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 160 & 169 & 39 & 202 & 430 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 200$, $\tau = 0.20$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 979 & 0 & 0 & 3 & 18 \\ 
+  clayton & $\text{xv}_{1}$ & 979 & 0 & 0 & 3 & 18 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 961 & 0 & 0 & 6 & 33 \\ 
+  clayton & $K_{n}=2$ & 960 & 0 & 0 & 7 & 33 \\ 
+  clayton & $K_{n}=5$ & 977 & 0 & 0 & 7 & 16 \\ 
+  clayton & $K_{n}=10$ & 976 & 0 & 0 & 6 & 18 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 977 & 0 & 0 & 5 & 18 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 977 & 0 & 0 & 5 & 18 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 980 & 0 & 0 & 4 & 16 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 972 & 0 & 0 & 9 & 19 \\ 
+   \hdashline
+gumbel & AIC & 2 & 687 & 232 & 26 & 53 \\ 
+  gumbel & $\text{xv}_{1}$ & 2 & 687 & 232 & 26 & 53 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 1 & 659 & 268 & 29 & 43 \\ 
+  gumbel & $K_{n}=2$ & 3 & 647 & 245 & 39 & 66 \\ 
+  gumbel & $K_{n}=5$ & 2 & 682 & 235 & 31 & 50 \\ 
+  gumbel & $K_{n}=10$ & 1 & 694 & 226 & 27 & 52 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 2 & 694 & 231 & 25 & 48 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 2 & 692 & 234 & 25 & 47 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 1 & 687 & 233 & 29 & 50 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 2 & 679 & 237 & 29 & 53 \\ 
+   \hdashline
+joe & AIC & 0 & 135 & 864 & 0 & 1 \\ 
+  joe & $\text{xv}_{1}$ & 0 & 135 & 864 & 0 & 1 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 0 & 114 & 886 & 0 & 0 \\ 
+  joe & $K_{n}=2$ & 1 & 165 & 832 & 2 & 0 \\ 
+  joe & $K_{n}=5$ & 0 & 143 & 855 & 2 & 0 \\ 
+  joe & $K_{n}=10$ & 0 & 152 & 848 & 0 & 0 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 0 & 142 & 857 & 0 & 1 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 0 & 142 & 857 & 0 & 1 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 0 & 137 & 862 & 0 & 1 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 0 & 146 & 852 & 1 & 1 \\ 
+   \hdashline
+frank & AIC & 24 & 42 & 1 & 755 & 178 \\ 
+  frank & $\text{xv}_{1}$ & 24 & 42 & 1 & 755 & 178 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 12 & 43 & 1 & 774 & 170 \\ 
+  frank & $K_{n}=2$ & 46 & 54 & 4 & 695 & 201 \\ 
+  frank & $K_{n}=5$ & 24 & 43 & 1 & 758 & 174 \\ 
+  frank & $K_{n}=10$ & 26 & 42 & 1 & 757 & 174 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 22 & 41 & 1 & 765 & 171 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 21 & 41 & 1 & 770 & 167 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 20 & 38 & 1 & 774 & 167 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 27 & 43 & 2 & 756 & 172 \\ 
+   \hdashline
+gaussian & AIC & 55 & 99 & 4 & 164 & 678 \\ 
+  gaussian & $\text{xv}_{1}$ & 55 & 99 & 4 & 164 & 678 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 39 & 111 & 5 & 175 & 670 \\ 
+  gaussian & $K_{n}=2$ & 72 & 118 & 6 & 185 & 619 \\ 
+  gaussian & $K_{n}=5$ & 57 & 99 & 3 & 166 & 675 \\ 
+  gaussian & $K_{n}=10$ & 52 & 106 & 3 & 170 & 669 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 52 & 103 & 3 & 168 & 674 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 56 & 104 & 3 & 168 & 669 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 56 & 104 & 4 & 161 & 675 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 64 & 118 & 4 & 165 & 649 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 400$, $\tau = 0.20$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 860 & 12 & 1 & 46 & 81 \\ 
+  clayton & $\text{xv}_{1}$ & 860 & 12 & 1 & 46 & 81 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 807 & 13 & 1 & 58 & 121 \\ 
+  clayton & $K_{n}=2$ & 826 & 18 & 14 & 45 & 97 \\ 
+  clayton & $K_{n}=5$ & 848 & 12 & 3 & 48 & 89 \\ 
+  clayton & $K_{n}=10$ & 846 & 14 & 3 & 47 & 90 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 855 & 12 & 1 & 48 & 84 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 860 & 11 & 1 & 47 & 81 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 848 & 13 & 1 & 54 & 84 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 789 & 22 & 11 & 71 & 107 \\ 
+   \hdashline
+gumbel & AIC & 30 & 376 & 362 & 92 & 140 \\ 
+  gumbel & $\text{xv}_{1}$ & 30 & 376 & 362 & 92 & 140 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 23 & 336 & 432 & 91 & 118 \\ 
+  gumbel & $K_{n}=2$ & 53 & 339 & 378 & 101 & 129 \\ 
+  gumbel & $K_{n}=5$ & 34 & 384 & 355 & 110 & 117 \\ 
+  gumbel & $K_{n}=10$ & 34 & 389 & 347 & 102 & 128 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 32 & 395 & 352 & 98 & 123 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 30 & 399 & 344 & 102 & 125 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 35 & 394 & 352 & 99 & 120 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 56 & 353 & 361 & 115 & 115 \\ 
+   \hdashline
+joe & AIC & 1 & 177 & 777 & 22 & 23 \\ 
+  joe & $\text{xv}_{1}$ & 1 & 177 & 777 & 22 & 23 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 1 & 134 & 823 & 24 & 18 \\ 
+  joe & $K_{n}=2$ & 13 & 194 & 728 & 36 & 29 \\ 
+  joe & $K_{n}=5$ & 3 & 200 & 748 & 26 & 23 \\ 
+  joe & $K_{n}=10$ & 1 & 192 & 761 & 22 & 24 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 1 & 188 & 765 & 24 & 22 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 1 & 184 & 769 & 23 & 23 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 0 & 202 & 753 & 21 & 24 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 7 & 191 & 737 & 30 & 35 \\ 
+   \hdashline
+frank & AIC & 119 & 130 & 38 & 509 & 204 \\ 
+  frank & $\text{xv}_{1}$ & 119 & 130 & 38 & 508 & 205 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 82 & 124 & 62 & 534 & 198 \\ 
+  frank & $K_{n}=2$ & 149 & 139 & 67 & 444 & 201 \\ 
+  frank & $K_{n}=5$ & 132 & 126 & 50 & 505 & 187 \\ 
+  frank & $K_{n}=10$ & 118 & 143 & 44 & 514 & 181 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 123 & 141 & 40 & 516 & 180 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 128 & 139 & 42 & 514 & 177 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 121 & 136 & 41 & 501 & 201 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 153 & 129 & 78 & 438 & 202 \\ 
+   \hdashline
+gaussian & AIC & 158 & 189 & 58 & 198 & 397 \\ 
+  gaussian & $\text{xv}_{1}$ & 159 & 189 & 58 & 196 & 398 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 109 & 197 & 86 & 218 & 390 \\ 
+  gaussian & $K_{n}=2$ & 187 & 186 & 97 & 202 & 328 \\ 
+  gaussian & $K_{n}=5$ & 171 & 214 & 57 & 207 & 351 \\ 
+  gaussian & $K_{n}=10$ & 174 & 195 & 61 & 202 & 368 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 168 & 208 & 56 & 203 & 365 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 172 & 203 & 54 & 206 & 365 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 176 & 198 & 58 & 201 & 367 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 180 & 180 & 86 & 204 & 350 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 100$, $\tau = 0.25$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 937 & 1 & 0 & 16 & 46 \\ 
+  clayton & $\text{xv}_{1}$ & 937 & 1 & 0 & 16 & 46 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 909 & 1 & 0 & 26 & 64 \\ 
+  clayton & $K_{n}=2$ & 914 & 2 & 0 & 32 & 52 \\ 
+  clayton & $K_{n}=5$ & 933 & 1 & 0 & 22 & 44 \\ 
+  clayton & $K_{n}=10$ & 936 & 1 & 0 & 20 & 43 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 936 & 1 & 0 & 17 & 46 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 939 & 1 & 0 & 18 & 42 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 928 & 1 & 0 & 20 & 51 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 910 & 1 & 2 & 32 & 55 \\ 
+   \hdashline
+gumbel & AIC & 4 & 598 & 253 & 51 & 94 \\ 
+  gumbel & $\text{xv}_{1}$ & 4 & 598 & 253 & 51 & 94 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 3 & 573 & 298 & 54 & 72 \\ 
+  gumbel & $K_{n}=2$ & 13 & 580 & 265 & 54 & 88 \\ 
+  gumbel & $K_{n}=5$ & 3 & 595 & 258 & 58 & 86 \\ 
+  gumbel & $K_{n}=10$ & 2 & 607 & 250 & 54 & 87 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 4 & 622 & 240 & 50 & 84 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 4 & 617 & 240 & 54 & 85 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 4 & 611 & 247 & 55 & 83 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 12 & 559 & 267 & 68 & 94 \\ 
+   \hdashline
+joe & AIC & 0 & 143 & 852 & 0 & 5 \\ 
+  joe & $\text{xv}_{1}$ & 0 & 143 & 852 & 0 & 5 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 0 & 121 & 876 & 0 & 3 \\ 
+  joe & $K_{n}=2$ & 0 & 172 & 817 & 6 & 5 \\ 
+  joe & $K_{n}=5$ & 0 & 159 & 836 & 0 & 5 \\ 
+  joe & $K_{n}=10$ & 0 & 152 & 843 & 0 & 5 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 0 & 154 & 842 & 0 & 4 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 0 & 150 & 845 & 0 & 5 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 0 & 158 & 838 & 0 & 4 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 0 & 174 & 808 & 7 & 11 \\ 
+   \hdashline
+frank & AIC & 41 & 74 & 4 & 686 & 195 \\ 
+  frank & $\text{xv}_{1}$ & 41 & 74 & 4 & 686 & 195 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 24 & 81 & 7 & 704 & 184 \\ 
+  frank & $K_{n}=2$ & 66 & 77 & 12 & 642 & 203 \\ 
+  frank & $K_{n}=5$ & 40 & 84 & 5 & 674 & 197 \\ 
+  frank & $K_{n}=10$ & 39 & 76 & 4 & 686 & 195 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 42 & 75 & 3 & 694 & 186 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 41 & 75 & 3 & 690 & 191 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 42 & 69 & 3 & 693 & 193 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 72 & 73 & 16 & 645 & 194 \\ 
+   \hdashline
+gaussian & AIC & 99 & 137 & 13 & 171 & 580 \\ 
+  gaussian & $\text{xv}_{1}$ & 99 & 136 & 13 & 171 & 581 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 64 & 157 & 18 & 187 & 574 \\ 
+  gaussian & $K_{n}=2$ & 105 & 162 & 16 & 186 & 531 \\ 
+  gaussian & $K_{n}=5$ & 110 & 166 & 9 & 180 & 535 \\ 
+  gaussian & $K_{n}=10$ & 107 & 146 & 13 & 176 & 558 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 98 & 147 & 11 & 178 & 566 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 101 & 148 & 13 & 173 & 565 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 104 & 149 & 11 & 182 & 554 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 113 & 143 & 23 & 192 & 529 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 200$, $\tau = 0.25$)} 
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{llrrrrr}
+  \hline
+d.cop & IC & clayton & gumbel & joe & frank & gaussian \\ 
+  \hline
+clayton & AIC & 990 & 0 & 0 & 2 & 8 \\ 
+  clayton & $\text{xv}_{1}$ & 990 & 0 & 0 & 2 & 8 \\ 
+  clayton & $\text{xv}\_\text{CIC}$ & 981 & 0 & 0 & 4 & 15 \\ 
+  clayton & $K_{n}=2$ & 984 & 0 & 0 & 5 & 11 \\ 
+  clayton & $K_{n}=5$ & 991 & 0 & 0 & 1 & 8 \\ 
+  clayton & $K_{n}=10$ & 989 & 0 & 0 & 3 & 8 \\ 
+  clayton & $K_{n}=\tfrac{n}{2}$ & 989 & 0 & 0 & 2 & 9 \\ 
+  clayton & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 990 & 0 & 0 & 2 & 8 \\ 
+  clayton & $K_{n}=\sqrt{n}$ & 991 & 0 & 0 & 3 & 6 \\ 
+  clayton & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 986 & 0 & 0 & 2 & 12 \\ 
+   \hdashline
+gumbel & AIC & 0 & 754 & 182 & 22 & 42 \\ 
+  gumbel & $\text{xv}_{1}$ & 0 & 754 & 182 & 22 & 42 \\ 
+  gumbel & $\text{xv}\_\text{CIC}$ & 0 & 735 & 210 & 22 & 33 \\ 
+  gumbel & $K_{n}=2$ & 1 & 745 & 186 & 22 & 46 \\ 
+  gumbel & $K_{n}=5$ & 0 & 760 & 174 & 21 & 45 \\ 
+  gumbel & $K_{n}=10$ & 0 & 756 & 178 & 24 & 42 \\ 
+  gumbel & $K_{n}=\tfrac{n}{2}$ & 0 & 765 & 173 & 23 & 39 \\ 
+  gumbel & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 0 & 763 & 176 & 22 & 39 \\ 
+  gumbel & $K_{n}=\sqrt{n}$ & 0 & 760 & 176 & 23 & 41 \\ 
+  gumbel & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 0 & 749 & 184 & 27 & 40 \\ 
+   \hdashline
+joe & AIC & 0 & 92 & 908 & 0 & 0 \\ 
+  joe & $\text{xv}_{1}$ & 0 & 92 & 908 & 0 & 0 \\ 
+  joe & $\text{xv}\_\text{CIC}$ & 0 & 76 & 924 & 0 & 0 \\ 
+  joe & $K_{n}=2$ & 0 & 116 & 884 & 0 & 0 \\ 
+  joe & $K_{n}=5$ & 0 & 98 & 902 & 0 & 0 \\ 
+  joe & $K_{n}=10$ & 0 & 97 & 903 & 0 & 0 \\ 
+  joe & $K_{n}=\tfrac{n}{2}$ & 0 & 94 & 906 & 0 & 0 \\ 
+  joe & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 0 & 94 & 906 & 0 & 0 \\ 
+  joe & $K_{n}=\sqrt{n}$ & 0 & 93 & 907 & 0 & 0 \\ 
+  joe & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 0 & 105 & 894 & 1 & 0 \\ 
+   \hdashline
+frank & AIC & 8 & 30 & 0 & 815 & 147 \\ 
+  frank & $\text{xv}_{1}$ & 8 & 30 & 0 & 815 & 147 \\ 
+  frank & $\text{xv}\_\text{CIC}$ & 4 & 30 & 0 & 838 & 128 \\ 
+  frank & $K_{n}=2$ & 13 & 36 & 0 & 794 & 157 \\ 
+  frank & $K_{n}=5$ & 10 & 32 & 0 & 816 & 142 \\ 
+  frank & $K_{n}=10$ & 7 & 31 & 0 & 829 & 133 \\ 
+  frank & $K_{n}=\tfrac{n}{2}$ & 8 & 29 & 0 & 827 & 136 \\ 
+  frank & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 7 & 30 & 0 & 819 & 144 \\ 
+  frank & $K_{n}=\sqrt{n}$ & 8 & 33 & 0 & 823 & 136 \\ 
+  frank & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 11 & 34 & 0 & 808 & 147 \\ 
+   \hdashline
+gaussian & AIC & 32 & 67 & 0 & 126 & 775 \\ 
+  gaussian & $\text{xv}_{1}$ & 32 & 67 & 0 & 126 & 775 \\ 
+  gaussian & $\text{xv}\_\text{CIC}$ & 22 & 84 & 0 & 141 & 753 \\ 
+  gaussian & $K_{n}=2$ & 44 & 83 & 0 & 163 & 710 \\ 
+  gaussian & $K_{n}=5$ & 31 & 67 & 0 & 131 & 771 \\ 
+  gaussian & $K_{n}=10$ & 33 & 71 & 0 & 138 & 758 \\ 
+  gaussian & $K_{n}=\tfrac{n}{2}$ & 33 & 69 & 0 & 130 & 768 \\ 
+  gaussian & $K_{n}=\tfrac{n}{\text{log}(n)}$ & 30 & 71 & 0 & 134 & 765 \\ 
+  gaussian & $K_{n}=\sqrt{n}$ & 30 & 69 & 0 & 133 & 768 \\ 
+  gaussian & $K_{n}=\tfrac{\sqrt{n}}{\text{log}(n)}$ & 34 & 75 & 0 & 145 & 746 \\ 
+   \hline
+\end{tabular}
+\caption{Copula selection using different information criteria ($n = 400$, $\tau = 0.25$)} 
+\end{table}
+
+
