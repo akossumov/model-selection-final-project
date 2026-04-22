@@ -18,7 +18,7 @@ The R code for the simulations is organized into two main folders corresponding 
 * **Pseudo-Likelihood (MPLE) Simulations:** To run the simulations evaluating the semiparametric criteria, navigate to the `MPLE` folder and execute the `main.R` script.
 
 ## Files Included
-* `Report.pdf`: The complete final project report detailing the methodology and simulation results.
-* `Presentation.pdf`: The Beamer slide deck used for the project defense.
+* `MATH782_PROJECT_REPORT.pdf`: The complete final project report detailing the methodology and simulation results.
+* `MATH782_PROJECT_PRESENTATION.pdf`: The Beamer slide deck used for the project defense.
 * `two_stage_MLE/`: Directory containing the parametric simulation scripts.
 * `MPLE/`: Directory containing the semiparametric simulation scripts.
