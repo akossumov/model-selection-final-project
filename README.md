@@ -15,7 +15,7 @@ The R code for the simulations is organized into two main folders corresponding 
 
 * **Two-Stage MLE Simulations:** To run the simulations for the fully parametric approach, navigate to the `two_stage_MLE` folder and execute the `simulation_two_stage_MLE.R` script.
 
-* **Pseudo-Likelihood (MPLE) Simulations:** To run the simulations evaluating the semiparametric criteria (like PAIC, cross-validation, etc.), navigate to the `MPLE` folder and execute the `main.R` script.
+* **Pseudo-Likelihood (MPLE) Simulations:** To run the simulations evaluating the semiparametric criteria, navigate to the `MPLE` folder and execute the `main.R` script.
 
 ## Files Included
 * `Report.pdf`: The complete final project report detailing the methodology and simulation results.
